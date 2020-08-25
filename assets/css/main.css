@@ -387,5 +387,48 @@ header {
 
 /* Footer */
 .footer-bg {
+    margin-top: 60px;
     background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.footer-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.row {
+    flex-direction: row;
+    margin-left: 80px;
+    cursor: text;
+}
+
+.footer__title {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.footer__list {
+    padding: 0;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.footer__list-category {
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+.footer__icon {
+    margin-right: 10px;
+}
+
+.footer__desc {
+    margin: 6px 0;
 }
