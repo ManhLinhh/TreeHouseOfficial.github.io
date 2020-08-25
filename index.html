@@ -156,6 +156,61 @@
                 <div class="container__card-one">
                     <div class="card-one__header">
                         <div class="card-one__header-span">
+                            <p class="card-one__header-title">Office 365</p>
+                        </div>
+                    </div>
+                    <div class="card-one__cards">
+                        <div class="card-one__card">
+                            <div class="card-one__card-img-form">
+                                <a href="" class="card-one__card-img-link">
+                                    <img src="./assets/img/TreeHouse-google-drive.png" alt="Google Drive"
+                                        class="card-one__card-img">
+                                </a>
+                            </div>
+                            <p class="card-one__card-title">OneNote 2020</p>
+                            <p class="card-one__card-desc">Category: Office 365</p>
+                            <a href="" class="card-one__card-btn">Download</a>
+                        </div>
+                        <div class="card-one__card">
+                            <div class="card-one__card-img-form">
+                                <a href="" class="card-one__card-img-link">
+                                    <img src="./assets/img/TreeHouse-unikey.png" alt="Unikey"
+                                        class="card-one__card-img">
+                                </a>
+                            </div>
+                            <p class="card-one__card-title">Word 2020</p>
+                            <p class="card-one__card-desc">Category: Office 365</p>
+                            <a href="" class="card-one__card-btn">Download</a>
+                        </div>
+                        <div class="card-one__card">
+                            <div class="card-one__card-img-form">
+                                <a href="" class="card-one__card-img-link">
+                                    <img src="./assets/img/TreeHouse-winrar.png" alt="Winrar"
+                                        class="card-one__card-img">
+                                </a>
+                            </div>
+                            <p class="card-one__card-title">Excel 2020</p>
+                            <p class="card-one__card-desc">Category: Office 365</p>
+                            <a href="" class="card-one__card-btn">Download</a>
+                        </div>
+                        <div class="card-one__card">
+                            <div class="card-one__card-img-form">
+                                <a href="" class="card-one__card-img-link">
+                                    <img src="./assets/img/TreeHouse-chrome.png" alt="Chrome"
+                                        class="card-one__card-img">
+                                </a>
+                            </div>
+                            <p class="card-one__card-title">PowerPoint 2020</p>
+                            <p class="card-one__card-desc">Category: Office 365</p>
+                            <a href="" class="card-one__card-btn">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="container__card-one">
+                    <div class="card-one__header">
+                        <div class="card-one__header-span">
                             <p class="card-one__header-title">Operating System</p>
                         </div>
                     </div>
@@ -209,8 +264,72 @@
             </div>
         </div>
         <footer class="footer">
-
+            <div class="footer-bg">
+                <div class="grid">
+                    <div class="row">
+                        <p class="footer__title">
+                            Contact
+                        </p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <p class="footer__desc">
+                                    We provide the latest and fastest download links.
+                                </p>
+                            </li>
+                            <li class="footer__item">
+                                <i class="fas fa-envelope"></i>
+                                <p class="footer__desc">treehouseofficialwebsite@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <p class="footer__title">
+                            Category
+                        </p>
+                        <ul class="footer__list">
+                            <li class="footer__list-category">Home</li>
+                            <li class="footer__list-category">Office 365</li>
+                            <li class="footer__list-category">Operating System</li>
+                            <li class="footer__list-category">For Windows</li>
+                            <li class="footer__list-category">Donate</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <p class="footer__title">
+                            Connect with us
+                        </p>
+                        <div class="footer__embed-fb">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftreehouseweb.gq%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="340" height="214" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110664590731471" theme_color="#13cf13"
+        logged_in_greeting="Hi! How can I help you?" logged_out_greeting="Hi! How can I help you?">
     </div>
 </body>
 

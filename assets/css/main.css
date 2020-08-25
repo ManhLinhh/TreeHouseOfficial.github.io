@@ -18,13 +18,18 @@ header {
     justify-content: flex-end;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--text-color);
+}
+
+.header__top-item:hover {
+    color: #ccc;
 }
 
 .header__top-item {
     margin-right: 1.5rem;
     padding-bottom: 0.4rem;
     cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.2s;
 }
 
 .header__navbar {
@@ -50,6 +55,7 @@ header {
     color: var(--white-color);
     display: inline-block;
     margin: 12px 5px;
+    transition: all 0.2s;
 }
 
 #mr-0 {
@@ -60,13 +66,13 @@ header {
 .header__navbar-item:hover {
     color: #cccccc;
     cursor: pointer;
-    transition: all 0.2s;
 }
 
 .header__navbar-item a {
     color: var(--white-color);
     text-decoration: none;
     padding: 20px 10px;
+    transition: all 0.2s;
 }
 
 .header__top-list,
@@ -220,11 +226,11 @@ header {
     border-radius: 4px;
     padding-top: 4px;
     color: var(--white-color);
+    transition: all 0.5s;
 }
 
 .form__top-btn:hover {
     background-color: rgb(6,161,11);
-    transition: all 0.5s;
 }
 
 /* container__colunm */
@@ -366,10 +372,20 @@ header {
     color: var(--white-color);
     font-weight: 400;
     font-size: 1.4rem;
+    transition: all 0.5s;
+}
+
+.card-one__card-btn:hover {
+    background-color: rgb(6,161,11);
 }
 
 .card-one__card-desc {
     margin: 8px 20px 10px;
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+/* Footer */
+.footer-bg {
+    background-color: var(--primary-color);
 }

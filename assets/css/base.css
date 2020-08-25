@@ -8,6 +8,7 @@
 * {
     box-sizing: inherit;
     text-decoration: none;
+    list-style: none;
 }
 
 html {
