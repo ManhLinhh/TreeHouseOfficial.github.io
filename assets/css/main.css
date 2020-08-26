@@ -135,24 +135,11 @@ header {
     margin: 0 20px;
     padding: 6px 0;
     border-bottom: 1px solid #f6f6f6;
-}
-
-.container__category-main-item:hover 
-.container__category-main-icon{
-    color: #ccc;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 
 .container__category-main-item:hover {
-    color: #ccc;
-    transition: all 0.2s;
-}
-
-
-.container__category-main-icon {
-    margin-right: 8px;
-    color: var(--text-color);
-    margin-top: 5px;
+    padding-left: 10px;
 }
 
 .container__category-main-icon-end {
