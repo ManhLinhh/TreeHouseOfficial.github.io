@@ -4,308 +4,1086 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tree House - Free Download</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset-css.min.css">
+    <title>TreeHouse - Free Download Website</title>
+    <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="./assets/css/base.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <!-- My Library -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset-css.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <!-- Fonts -->
+    <link href="./assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="app">
-        <div class="header__top grid">
-            <ul class="header__top-list">
-                <li class="header__top-item">Đăng Ký</li>
-                <li class="header__top-item">Đăng Nhập</li>
-            </ul>
-        </div>
         <header class="header header-bg">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <!-- Navbar -->
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
-                        <li style="margin-top: 6px;" class="header__navbar-item"><a href=""><img
-                                    class="header__navbar-item-logo" src="./assets/img/Logo_7.png" alt="Logo"></a></li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="" class="header__navbar-item-link">Trang Web nhà phát triển</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
+                    <!-- Header Notify -->
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item"><a href="#">Home</a></li>
-                        <li class="header__navbar-item"><a href="#">Office 365</a></li>
-                        <li class="header__navbar-item"><a href="#">Operating System</a></li>
-                        <li class="header__navbar-item"><a href="#">For Windows</a></li>
-                        <li class="header__navbar-item"><a href="#">Donate</a></li>
-                        <li class="header__navbar-item" id="mr-0"><i class="fas fa-search"></i></li>
+                        <li class="header__navbar-item header__navbar-item-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                                <div class="header__notify">
+                                    <img src="./assets/img/NoNotify.png" alt="No Notify" class="header__notify-img">
+                                    <p class="header__notify-title">Đăng nhập để xem Thông báo</p>
+                                    <div class="header__notify-form">
+                                        <p class="header__notify-desc">Đăng ký</p>
+                                        <p class="header__notify-desc">Đăng nhập</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                        ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/no-user.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">User_2089</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Lịch sử</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
-            </div>
-        </header>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="./assets/img/TreeHouse-logo-long.png" alt="TreeHouse">
+                        </a>
+                    </div>
+                    <!-- Header Search -->
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
 
-        <div class="container grid">
-            <div class="line">
-                <div class="container__category">
-                    <header class="container__category-header">
-                        <p class="container__category-header-p">Category</p>
-                    </header>
-                    <main class="container__category-main">
-                        <ul class="container__category-main-list">
-                            <li class="container__category-main-item container__category-main-item-one">Home
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            <!-- Header Search Famous -->
+                            <div class="header__search-famous">
+                                <h3 class="header__search-famous-heading">Top tìm kiếm</h3>
+                                <ul class="header__search-famous-list">
+                                    <li class="header__search-famous-item">
+                                        <a href="">Word 2020</a>
+                                    </li>
+                                    <li class="header__search-famous-item">
+                                        <a href="">Windows 10</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- Header Cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <!-- <span class="header__cart-notice">3</span> -->
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list  header__cart-list--no-cart">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+                                <!-- Cart -->
+                                <div class="header__cart--have-cart">
+                                    <h4 class="header__cart-heading">
+                                        Sản phẩm đã thêm
+                                    </h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/no-img.png" alt=""
+                                                class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Word 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/Microsoft-Excel-logo-512x512.png" alt=""
+                                                class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Excel 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/window 10.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Word 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header-sort-bar">
+                <li class="header-sort-item header-sort-item--active">
+                    <a href="" class="header-sort-link">Phổ biến</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Mới nhất</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Tải nhiều</a>
+                </li>
+            </ul>
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Tất cả</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Office 365</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Operating System</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">For Windows</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Donate</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+                            <button class="home-filter__btn btn">Mới nhất</button>
+                            <button class="home-filter__btn btn">Tải nhiều</button>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter-page-btn home-filter-page-btn--disabled">
+                                        <i class="home-filter-page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter-page-btn">
+                                        <i class="home-filter-page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Office 365</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Operating System</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">For Windows</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Donate</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="home-product">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/Microsoft-Word-Logo.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải Word 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">2.899.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">121 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải Excel 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">2.499.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">121 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/window\ 10.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải Windows 10 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">4.599.770₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">121 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải PowerPoint 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">3.219.770₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">121 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải Outlook 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">3.219.770₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">121 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Product item -->
+                                    <a href="" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(./assets/img/no-img.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">Tải ... 2020 Miễn phí tại TreeHouse
+                                        </h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item__price-old">0.000.000₫</span>
+                                            <span class="home-product-item__price-current">Miễn phí</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <!-- Like: home-product-item__like--liked -->
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">0 đã tải</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <!-- <div class="home-product-item__sale-off">
+                                 <span class="home-product-item__sale-off-percent">100%</span>
+                                 <span class="home-product-item__sale-off-label">GIẢM</span>
+                                 </div> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="item__icon fas fa-angle-left"></i>
+                                </a>
                             </li>
-                            <li class="container__category-main-item container__category-main-item-two">Office 365</li>
-                            <li class="container__category-main-item container__category-main-item-three">Operating
-                                System
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
                             </li>
-                            <li class="container__category-main-item container__category-main-item-four">For Windows
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="item__icon fas fa-angle-right"></i>
+                                </a>
                             </li>
                         </ul>
-                    </main>
-                </div>
-                <div class="container__form">
-                    <header class="form__top">
-                        <a class="form__to-img-link" href="">
-                            <div class="form__top-img"></div>
-                        </a>
-                        <div class="form__top-ads">
-                            <a class="form__top-title" href="">Download Free</a>
-                            <p class="form__top-desc">TreeHouse Website is the newest high speed link sharing website
-                                for free.</p>
-                            <a class="form__top-btn" href="">Read More</a>
-                        </div>
-                    </header>
-                </div>
-            </div>
-            <div class="container__colunm line">
-                <a href="">
-                    <div class="container__colunm-form">
-                        <div class="container__colunm-img-one container__colunm-img"></div>
-                        <p class="container__colunm-title">Word 2020</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="container__colunm-form">
-                        <div class="container__colunm-img-two container__colunm-img"></div>
-                        <p class="container__colunm-title">Excel 2020</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="container__colunm-form">
-                        <div class="container__colunm-img-three container__colunm-img"></div>
-                        <p class="container__colunm-title">Windows 10</p>
-                    </div>
-                </a>
-            </div>
-            <div class="line">
-                <div class="container__card-one">
-                    <div class="card-one__header">
-                        <div class="card-one__header-span">
-                            <p class="card-one__header-title">For Windows</p>
-                        </div>
-                    </div>
-                    <div class="card-one__cards">
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-unikey.png" alt="Unikey"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Unikey</p>
-                            <p class="card-one__card-desc">Category: For Windows</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-winrar.png" alt="Winrar"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">WinRar</p>
-                            <p class="card-one__card-desc">Category: For Windows</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-chrome.png" alt="Chrome"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Chrome</p>
-                            <p class="card-one__card-desc">Category: For Windows</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-google-drive.png" alt="Google Drive"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Google Drive</p>
-                            <p class="card-one__card-desc">Category: For Windows</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="line">
-                <div class="container__card-one">
-                    <div class="card-one__header">
-                        <div class="card-one__header-span">
-                            <p class="card-one__header-title">Office 365</p>
-                        </div>
-                    </div>
-                    <div class="card-one__cards">
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-Onenote-2020.png" alt="OneNote"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">OneNote 2020</p>
-                            <p class="card-one__card-desc">Category: Office 365</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-Word-2020.png" alt="Word"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Word 2020</p>
-                            <p class="card-one__card-desc">Category: Office 365</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-Excel-2020.png" alt="Excel"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Excel 2020</p>
-                            <p class="card-one__card-desc">Category: Office 365</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-power-point.png" alt="PowerPoint"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">PowerPoint 2020</p>
-                            <p class="card-one__card-desc">Category: Office 365</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="line">
-                <div class="container__card-one">
-                    <div class="card-one__header">
-                        <div class="card-one__header-span">
-                            <p class="card-one__header-title">Operating System</p>
-                        </div>
-                    </div>
-                    <div class="card-one__cards">
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-windows-10.png" alt="Windows 10 32 bit"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Windows 10 32 bit</p>
-                            <p class="card-one__card-desc">Category: Operating System</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-windows-10.png" alt="Windows 10 64 bit"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Windows 10 64 bit</p>
-                            <p class="card-one__card-desc">Category: Operating System</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-ubuntu.png" alt="Ubuntu"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Ubuntu 20.04 LTS</p>
-                            <p class="card-one__card-desc">Category: Operating System</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
-                        <div class="card-one__card">
-                            <div class="card-one__card-img-form">
-                                <a href="" class="card-one__card-img-link">
-                                    <img src="./assets/img/TreeHouse-windows-7.png" alt="Google Drive"
-                                        class="card-one__card-img">
-                                </a>
-                            </div>
-                            <p class="card-one__card-title">Windows 7 64 bit</p>
-                            <p class="card-one__card-desc">Category: Operating System</p>
-                            <a href="" class="card-one__card-btn">Download</a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="footer-bg">
-                <div class="grid">
-                    <div class="footer-form">
-                        <div class="row">
-                            <p class="footer__title">
-                                Contact
-                            </p>
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    <p class="footer__desc">
-                                        We provide the latest and fastest download links.
-                                    </p>
-                                </li>
-                                <li class="footer__item">
-                                    <p class="footer__desc"><i
-                                            class="fas fa-envelope footer__icon"></i>treehouseofficialwebsite@gmail.com
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <p class="footer__title">
-                                Category
-                            </p>
-                            <ul class="footer__list">
-                                <li class="footer__list-category">Home</li>
-                                <li class="footer__list-category">Office 365</li>
-                                <li class="footer__list-category">Operating System</li>
-                                <li class="footer__list-category">For Windows</li>
-                                <li class="footer__list-category">Donate</li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <p class="footer__title">
-                                Connect with us
-                            </p>
-                            <div class="footer__embed-fb">
+        <div class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn tải</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Về TreeHouse</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer__text">TreeHouse cung cấp link tốc độ cao Google Drive mới nhất hoàn
+                                    toàn miễn phí!
+                                </p>
+                            </li>
+                            <li class="footer-item footer-item__mail">
+                                <i class="footer-item__icon far fa-envelope"></i>
+                                <p class="footer__text">treehouseofficialwebsite@gmail.com</p>
+                            </li>
+                            <li class="footer-item">
+                                <a href="//www.dmca.com/Protection/Status.aspx?ID=0422547b-eabf-402c-b59d-ab62fa96c899"
+                                    title="DMCA.com Protection Status" class="dmca-badge"> <img
+                                        src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=0422547b-eabf-402c-b59d-ab62fa96c899"
+                                        alt="DMCA.com Protection Status" /></a>
+                                <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trang chủ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Office 365</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Operating System</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">For Windows</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Donate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Kết nối với TreeHouse</h3>
+                        <div class="footer__plugin-pc">
+                            <div class="footer__embed-fb hide-on-mobile">
                                 <iframe
                                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftreehouseweb.gq%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                                     width="340" height="214" style="border:none;overflow:hidden" scrolling="no"
                                     frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
+                        <div class="footer__plugin-mobile">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftreehouseweb.gq%2F&tabs&width=300px&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=319795116003743"
+                                width="300px" height="214" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="footer__end">
+                <div class="grid wide">
+                    <p class="footer__text">Copyright &copy; 2019 - 2020 <a href="/"
+                            class="footer__text-link">TreeHouse</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Layout -->
+        <!-- <div class="modal">
+         <div class="modal__overlay"></div>
+         <div class="modal__body"> -->
+        <!-- Register form -->
+        <!-- <div class="auth-form">
+         <div class="auth-form__container">
+             <div class="auth-form__header">
+                 <h3 class="auth-form__heading">Đăng ký</h3>
+                 <span class="auth-form__switch-btn">Đăng nhập</span>
+             </div>
+             <div class="auth-form__form">
+                 <div class="auth-form__group">
+                     <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                 </div>
+                 <div class="auth-form__group">
+                     <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                 </div>
+                 <div class="auth-form__group">
+                     <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                 </div>
+             </div>
+             <div class="auth-form__aside">
+                 <p class="auth-form__policy-text">
+                     Bằng việc đăng kí, bạn đã đồng ý với TreeHouse về
+                     <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                     <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                 </p>
+             </div>
+             <div class="auth-form__controls">
+                 <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                 <button class="btn btn--primary btn--disabled">ĐĂNG KÝ</button>
+             </div>
+         </div>
+         <div class="auth-form__socials">
+             <a href="" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
+                 <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                 <span class="auth-form__socials-title">
+                     Kết nối với Facebook
+                 </span>
+             </a>
+             <a href="" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
+                 <i class="auth-form__socials-icon fab fa-google"></i>
+                 <span class="auth-form__socials-title">
+                     Kết nối với Google
+                 </span>
+             </a>
+         </div>
+         </div> -->
+        <!-- Login form -->
+        <!-- <div class="auth-form">
+         <div class="auth-form__container">
+             <div class="auth-form__header">
+                 <h3 class="auth-form__heading">Đăng nhập</h3>
+                 <span class="auth-form__switch-btn">Đăng ký</span>
+             </div>
+             <div class="auth-form__form">
+                 <div class="auth-form__group">
+                     <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                 </div>
+                 <div class="auth-form__group">
+                     <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                 </div>
+             </div>
+             <div class="auth-form__aside">
+                 <div class="auth-form__help">
+                     <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                     <span class="auth-form__help-separate"></span>
+                     <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                 </div>
+             </div>
+             <div class="auth-form__controls">
+                 <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                 <button class="btn btn--primary">ĐĂNG NHẬP</button>
+             </div>
+         </div>
+         <div class="auth-form__socials">
+             <a href="" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
+                 <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                 <span class="auth-form__socials-title auth-form__socials-title--long">
+                     Đăng nhập với Facebook
+                 </span>
+             </a>
+             <a href="" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
+                 <i class="auth-form__socials-icon fab fa-google"></i>
+                 <span class="auth-form__socials-title auth-form__socials-title--long">
+                     Đăng nhập với Google
+                 </span>
+             </a>
+         </div>
+         </div>
+         </div> -->
+        <!-- </div> -->
     </div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
@@ -323,11 +1101,12 @@
             js = d.createElement(s); js.id = id;
             js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="110664590731471" theme_color="#7fbb35"
-        logged_in_greeting="Hi! How can I help you?" logged_out_greeting="Hi! How can I help you?">
+        logged_in_greeting="Xin chào! Chúng tôi có thể giúp hoặc hỗ trợ gì cho bạn?"
+        logged_out_greeting="Xin chào! Chúng tôi có thể giúp hoặc hỗ trợ gì cho bạn?">
     </div>
 </body>
 
