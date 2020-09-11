@@ -270,6 +270,7 @@
 }
 
 /* Authen modal */
+
 .auth-form {
     width: 500px;
     background-color: var(--white-color);
@@ -325,6 +326,7 @@
     line-height: 1.8rem;
     text-align: center;
     padding: 0 12px;
+    color: var(--text-color);
 }
 
 .auth-form__text-link {
@@ -407,7 +409,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 3;
 }
 
 .header-with-search {
