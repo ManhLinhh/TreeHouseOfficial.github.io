@@ -26,14 +26,14 @@
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">
-                            <a href="" class="header__navbar-item-link">Trang Web nhà phát triển</a>
+                            <a href="/loader.html" class="header__navbar-item-link">Trang Web nhà phát triển</a>
                         </li>
                         <li class="header__navbar-item">
                             <span class="header__navbar-item-title--no-pointer">Kết nối</span>
-                            <a href="" class="header__navbar-icon-link">
+                            <a href="/loader.html" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fab fa-facebook"></i>
                             </a>
-                            <a href="" class="header__navbar-icon-link">
+                            <a href="/loader.html" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fab fa-instagram"></i>
                             </a>
                         </li>
@@ -41,46 +41,48 @@
                     <!-- Header Notify -->
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item-notify">
-                            <a href="" class="header__navbar-item-link">
-                                <i class="header__navbar-icon far fa-bell"></i>
-                                Thông báo
-                                <div class="header__notify">
-                                    <img src="./assets/img/NoNotify.png" alt="No Notify" class="header__notify-img">
-                                    <p class="header__notify-title">Đăng nhập để xem Thông báo</p>
-                                    <div class="header__notify-form">
-                                        <p class="header__notify-desc">Đăng ký</p>
-                                        <p class="header__notify-desc">Đăng nhập</p>
-                                    </div>
+                            <i class="header__navbar-icon far fa-bell"></i>
+                            Thông báo
+                            <div class="header__notify">
+                                <img src="./assets/img/NoNotify.png" alt="No Notify" class="header__notify-img">
+                                <p class="header__notify-title">Đăng nhập để xem Thông báo</p>
+                                <div class="header__notify-form">
+                                    <p onclick="openRegisterForm()" class="header__notify-desc">Đăng ký</p>
+                                    <p onclick="openLoginForm()" class="header__notify-desc">Đăng nhập</p>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
+                            <a href="/loader.html" class="header__navbar-item-link">
                                 <i class="header__navbar-icon far fa-question-circle"></i>
                                 Trợ giúp
                             </a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
-                        ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
-                        <li class="header__navbar-item header__navbar-user">
+                        <li onclick="openRegisterForm()"
+                            class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            Đăng ký
+                        </li>
+                        <li onclick="openLoginForm()" class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
                             <img src="./assets/img/no-user.jpg" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">User_2089</span>
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">
-                                    <a href="">Tài khoản của tôi</a>
+                                    <a href="/loader.html">Tài khoản của tôi</a>
                                 </li>
                                 <li class="header__navbar-user-item">
-                                    <a href="">Địa chỉ của tôi</a>
+                                    <a href="/loader.html">Địa chỉ của tôi</a>
                                 </li>
                                 <li class="header__navbar-user-item">
-                                    <a href="">Lịch sử</a>
+                                    <a href="/loader.html">Lịch sử</a>
                                 </li>
                                 <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                    <a href="">Đăng xuất</a>
+                                    <a href="/loader.html">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
                 <!-- Header with search -->
@@ -104,10 +106,10 @@
                                 <h3 class="header__search-famous-heading">Top tìm kiếm</h3>
                                 <ul class="header__search-famous-list">
                                     <li class="header__search-famous-item">
-                                        <a href="">Word 2020</a>
+                                        <a href="/loader.html">Word 2020</a>
                                     </li>
                                     <li class="header__search-famous-item">
-                                        <a href="">Windows 10</a>
+                                        <a href="/loader.html">Windows 10</a>
                                     </li>
                                 </ul>
                             </div>
@@ -135,8 +137,7 @@
                                     <ul class="header__cart-list-item">
                                         <!-- Cart item -->
                                         <li class="header__cart-item">
-                                            <img src="./assets/img/no-img.png" alt=""
-                                                class="header__cart-img">
+                                            <img src="./assets/img/no-img.png" alt="" class="header__cart-img">
                                             <div class="header__cart-item-info">
                                                 <div class="header__cart-item-head">
                                                     <h5 class="header__cart-item-name">Word 2020</h5>
@@ -182,7 +183,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <a href="" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                    <a href="/loader.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -191,13 +192,13 @@
             </div>
             <ul class="header-sort-bar">
                 <li class="header-sort-item header-sort-item--active">
-                    <a href="" class="header-sort-link">Phổ biến</a>
+                    <a href="/loader.html" class="header-sort-link">Phổ biến</a>
                 </li>
                 <li class="header-sort-item">
-                    <a href="" class="header-sort-link">Mới nhất</a>
+                    <a href="/loader.html" class="header-sort-link">Mới nhất</a>
                 </li>
                 <li class="header-sort-item">
-                    <a href="" class="header-sort-link">Tải nhiều</a>
+                    <a href="/loader.html" class="header-sort-link">Tải nhiều</a>
                 </li>
             </ul>
         </header>
@@ -209,19 +210,19 @@
                             <h3 class="category__heading">Danh mục</h3>
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Tất cả</a>
+                                    <a href="/loader.html" class="category-item__link">Tất cả</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Office 365</a>
+                                    <a href="/loader.html" class="category-item__link">Office 365</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Operating System</a>
+                                    <a href="/loader.html" class="category-item__link">Operating System</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">For Windows</a>
+                                    <a href="/loader.html" class="category-item__link">For Windows</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Donate</a>
+                                    <a href="/loader.html" class="category-item__link">Donate</a>
                                 </li>
                             </ul>
                         </nav>
@@ -237,10 +238,10 @@
                                     <span class="home-filter__page-current">1</span>/14
                                 </span>
                                 <div class="home-filter__page-control">
-                                    <a href="" class="home-filter-page-btn home-filter-page-btn--disabled">
+                                    <a href="/loader.html" class="home-filter-page-btn home-filter-page-btn--disabled">
                                         <i class="home-filter-page-icon fas fa-angle-left"></i>
                                     </a>
-                                    <a href="" class="home-filter-page-btn">
+                                    <a href="/loader.html" class="home-filter-page-btn">
                                         <i class="home-filter-page-icon fas fa-angle-right"></i>
                                     </a>
                                 </div>
@@ -249,16 +250,16 @@
                         <nav class="mobile-category">
                             <ul class="mobile-category__list">
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">Office 365</a>
+                                    <a href="/loader.html" class="mobile-category__link">Office 365</a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">Operating System</a>
+                                    <a href="/loader.html" class="mobile-category__link">Operating System</a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">For Windows</a>
+                                    <a href="/loader.html" class="mobile-category__link">For Windows</a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">Donate</a>
+                                    <a href="/loader.html" class="mobile-category__link">Donate</a>
                                 </li>
                             </ul>
                         </nav>
@@ -266,7 +267,7 @@
                             <div class="row sm-gutter">
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/Microsoft-Word-Logo.png);">
                                         </div>
@@ -289,7 +290,7 @@
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                             </div>
-                                            <span class="home-product-item__sold">121 đã tải</span>
+                                            <span class="home-product-item__sold">492 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
                                             <span class="home-product-item__category">Thể Loại: Office 365</span>
@@ -306,7 +307,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -327,16 +328,12 @@
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
-                                            <span class="home-product-item__sold">121 đã tải</span>
+                                            <span class="home-product-item__sold">95 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
                                             <span class="home-product-item__category">Thể Loại: Office 365</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            <span>Yêu Thích</span>
                                         </div>
                                         <!-- <div class="home-product-item__sale-off">
                                  <span class="home-product-item__sale-off-percent">100%</span>
@@ -346,7 +343,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/window\ 10.png);">
                                         </div>
@@ -367,12 +364,12 @@
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
-                                            <span class="home-product-item__sold">121 đã tải</span>
+                                            <span class="home-product-item__sold">14 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: Operating System</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -386,7 +383,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -426,7 +423,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -449,7 +446,7 @@
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                                 <i class="home-product-item__star--gold fas fa-star"></i>
                                             </div>
-                                            <span class="home-product-item__sold">121 đã tải</span>
+                                            <span class="home-product-item__sold">173 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
                                             <span class="home-product-item__category">Thể Loại: Office 365</span>
@@ -466,7 +463,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -483,16 +480,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -506,7 +503,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -523,16 +520,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -546,7 +543,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -563,16 +560,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -586,7 +583,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -603,16 +600,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -626,7 +623,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -643,16 +640,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -666,7 +663,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -683,16 +680,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -706,7 +703,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -723,16 +720,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -746,7 +743,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -763,16 +760,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -786,7 +783,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -803,16 +800,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -826,7 +823,7 @@
                                 </div>
                                 <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
-                                    <a href="" class="home-product-item">
+                                    <a href="/loader.html" class="home-product-item">
                                         <div class="home-product-item__img"
                                             style="background-image: url(./assets/img/no-img.png);">
                                         </div>
@@ -843,16 +840,16 @@
                                                 <i class="home-product-item__like-icon-fill fas fa-heart"></i>
                                             </span>
                                             <div class="home-product-item__rating">
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
-                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                             <span class="home-product-item__sold">0 đã tải</span>
                                         </div>
                                         <div class="home-product-item__origin">
-                                            <span class="home-product-item__category">Thể Loại: Office 365</span>
+                                            <span class="home-product-item__category">Thể Loại: ...</span>
                                         </div>
                                         <div class="home-product-item__favourite">
                                             <i class="fas fa-check"></i>
@@ -868,33 +865,33 @@
                         </div>
                         <ul class="pagination home-product__pagination">
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
+                                <a href="/loader.html" class="pagination-item__link">
                                     <i class="item__icon fas fa-angle-left"></i>
                                 </a>
                             </li>
                             <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-item__link">1</a>
+                                <a href="/loader.html" class="pagination-item__link">1</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">2</a>
+                                <a href="/loader.html" class="pagination-item__link">2</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">3</a>
+                                <a href="/loader.html" class="pagination-item__link">3</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">4</a>
+                                <a href="/loader.html" class="pagination-item__link">4</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">5</a>
+                                <a href="/loader.html" class="pagination-item__link">5</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">...</a>
+                                <a href="/loader.html" class="pagination-item__link">...</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">14</a>
+                                <a href="/loader.html" class="pagination-item__link">14</a>
                             </li>
                             <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
+                                <a href="/loader.html" class="pagination-item__link">
                                     <i class="item__icon fas fa-angle-right"></i>
                                 </a>
                             </li>
@@ -910,16 +907,16 @@
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Giới thiệu</a>
+                                <a href="/loader.html" class="footer-item__link">Giới thiệu</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                                <a href="/loader.html" class="footer-item__link">Trung tâm trợ giúp</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn tải</a>
+                                <a href="/loader.html" class="footer-item__link">Hướng dẫn tải</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Điều khoản</a>
+                                <a href="/loader.html" class="footer-item__link">Điều khoản</a>
                             </li>
                         </ul>
                     </div>
@@ -948,19 +945,19 @@
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trang chủ</a>
+                                <a href="/loader.html" class="footer-item__link">Trang chủ</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Office 365</a>
+                                <a href="/loader.html" class="footer-item__link">Office 365</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Operating System</a>
+                                <a href="/loader.html" class="footer-item__link">Operating System</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">For Windows</a>
+                                <a href="/loader.html" class="footer-item__link">For Windows</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Donate</a>
+                                <a href="/loader.html" class="footer-item__link">Donate</a>
                             </li>
                         </ul>
                     </div>
@@ -991,99 +988,109 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Layout -->
-        <!-- <div class="modal">
-         <div class="modal__overlay"></div>
-         <div class="modal__body"> -->
-        <!-- Register form -->
-        <!-- <div class="auth-form">
-         <div class="auth-form__container">
-             <div class="auth-form__header">
-                 <h3 class="auth-form__heading">Đăng ký</h3>
-                 <span class="auth-form__switch-btn">Đăng nhập</span>
-             </div>
-             <div class="auth-form__form">
-                 <div class="auth-form__group">
-                     <input type="email" class="auth-form__input" placeholder="Email của bạn">
-                 </div>
-                 <div class="auth-form__group">
-                     <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
-                 </div>
-                 <div class="auth-form__group">
-                     <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-                 </div>
-             </div>
-             <div class="auth-form__aside">
-                 <p class="auth-form__policy-text">
-                     Bằng việc đăng kí, bạn đã đồng ý với TreeHouse về
-                     <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                     <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                 </p>
-             </div>
-             <div class="auth-form__controls">
-                 <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
-                 <button class="btn btn--primary btn--disabled">ĐĂNG KÝ</button>
-             </div>
-         </div>
-         <div class="auth-form__socials">
-             <a href="" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
-                 <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                 <span class="auth-form__socials-title">
-                     Kết nối với Facebook
-                 </span>
-             </a>
-             <a href="" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
-                 <i class="auth-form__socials-icon fab fa-google"></i>
-                 <span class="auth-form__socials-title">
-                     Kết nối với Google
-                 </span>
-             </a>
-         </div>
-         </div> -->
-        <!-- Login form -->
-        <!-- <div class="auth-form">
-         <div class="auth-form__container">
-             <div class="auth-form__header">
-                 <h3 class="auth-form__heading">Đăng nhập</h3>
-                 <span class="auth-form__switch-btn">Đăng ký</span>
-             </div>
-             <div class="auth-form__form">
-                 <div class="auth-form__group">
-                     <input type="email" class="auth-form__input" placeholder="Email của bạn">
-                 </div>
-                 <div class="auth-form__group">
-                     <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
-                 </div>
-             </div>
-             <div class="auth-form__aside">
-                 <div class="auth-form__help">
-                     <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
-                     <span class="auth-form__help-separate"></span>
-                     <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
-                 </div>
-             </div>
-             <div class="auth-form__controls">
-                 <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
-                 <button class="btn btn--primary">ĐĂNG NHẬP</button>
-             </div>
-         </div>
-         <div class="auth-form__socials">
-             <a href="" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
-                 <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                 <span class="auth-form__socials-title auth-form__socials-title--long">
-                     Đăng nhập với Facebook
-                 </span>
-             </a>
-             <a href="" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
-                 <i class="auth-form__socials-icon fab fa-google"></i>
-                 <span class="auth-form__socials-title auth-form__socials-title--long">
-                     Đăng nhập với Google
-                 </span>
-             </a>
-         </div>
-         </div>
-         </div> -->
-        <!-- </div> -->
+        <!-- Modal Register -->
+        <div id="modal__register" class="modal">
+            <div onclick="closeRegisterForm()" class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Register form -->
+                <div class="auth-form register-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span onclick="openLoginForm(), closeRegisterForm()" class="auth-form__switch-btn">Đăng
+                                nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với TreeHouse về
+                                <a href="/loader.html" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="/loader.html" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button onclick="closeRegisterForm()" class="btn auth-form__controls-back btn--normal">TRỞ
+                                LẠI</button>
+                            <button class="btn btn--primary btn--disabled">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="/loader.html" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="/loader.html" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Register -->
+        <div id="modal__login" class="modal">
+            <div onclick="closeLoginForm()" class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Login form -->
+                <div class="auth-form login-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span onclick="openRegisterForm(), closeLoginForm()" class="auth-form__switch-btn">Đăng
+                                ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="/loader.html" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="/loader.html" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button onclick="closeRegisterForm()" class="btn auth-form__controls-back btn--normal">TRỞ
+                                LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="/loader.html" class="btn btn--size-s auth-form__socials-icon--facebook btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title auth-form__socials-title--long">
+                                Đăng nhập với Facebook
+                            </span>
+                        </a>
+                        <a href="/loader.html" class="btn btn--size-s auth-form__socials-icon--google btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title auth-form__socials-title--long">
+                                Đăng nhập với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
@@ -1108,6 +1115,7 @@
         logged_in_greeting="Xin chào! Chúng tôi có thể giúp hoặc hỗ trợ gì cho bạn?"
         logged_out_greeting="Xin chào! Chúng tôi có thể giúp hoặc hỗ trợ gì cho bạn?">
     </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
